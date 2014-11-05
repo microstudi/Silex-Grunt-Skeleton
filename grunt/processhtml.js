@@ -15,7 +15,7 @@ module.exports = function(grunt) {
         },
         dist: {
             files: {
-                '<%= conf.dist %>/<%= conf.views %>/layout.twig': ['<%= conf.dist %>/<%= conf.views %>/layout.twig']
+                '<%= conf.distViews %>/layout.twig': ['<%= conf.distViews %>/layout.twig']
             }
         }
     });

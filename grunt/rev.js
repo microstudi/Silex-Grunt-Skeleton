@@ -8,10 +8,10 @@ module.exports = function(grunt) {
         dist: {
             files: {
                 src: [
-                    '<%= conf.dist %>/<%= conf.web %>/scripts/{,*/}*.js',
-                    '<%= conf.dist %>/<%= conf.web %>/styles/{,*/}*.css',
-                    '<%= conf.dist %>/<%= conf.web %>/images/{,*/}*.{gif,jpeg,jpg,png,webp}',
-                    '<%= conf.dist %>/<%= conf.web %>/styles/fonts/{,*/}*.*'
+                    '<%= conf.distWeb %>/scripts/{,*/}*.js',
+                    '<%= conf.distWeb %>/styles/{,*/}*.css',
+                    '<%= conf.distWeb %>/images/{,*/}*.{gif,jpeg,jpg,png,webp}',
+                    '<%= conf.distWeb %>/styles/fonts/{,*/}*.*'
                 ]
             }
         }

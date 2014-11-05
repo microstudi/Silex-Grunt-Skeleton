@@ -10,7 +10,7 @@ module.exports = function(grunt) {
                 expand: true,
                 cwd: '<%= conf.web %>/images',
                 src: '{,*/}*.{gif,jpeg,jpg,png}',
-                dest: '<%= conf.dist %>/<%= conf.web %>/images'
+                dest: '<%= conf.distWeb %>/images'
             }]
         }
     });

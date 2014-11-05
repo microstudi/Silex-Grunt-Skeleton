@@ -8,12 +8,12 @@ module.exports = function(grunt) {
     grunt.config('modernizr', {
         dist : {
             devFile: 'bower_components/modernizr/modernizr.js',
-            outputFile: '<%= conf.dist %>/<%= conf.web %>/scripts/vendor/modernizr.js',
+            outputFile: '<%= conf.distWeb %>/scripts/vendor/modernizr.js',
             files: {
                 src:[
-                    '<%= conf.dist %>/<%= conf.web %>/scripts/{,*/}*.js',
-                    '!<%= conf.dist %>/<%= conf.web %>/scripts/vendor/*',
-                    '<%= conf.dist %>/<%= conf.web %>/styles/{,*/}*.css'
+                    '<%= conf.distWeb %>/scripts/{,*/}*.js',
+                    '!<%= conf.distWeb %>/scripts/vendor/*',
+                    '<%= conf.distWeb %>/styles/{,*/}*.css'
                 ]
             },
             uglify: true

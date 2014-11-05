@@ -23,7 +23,7 @@ module.exports = function(grunt) {
         },
         dist: { // The "server" task can pass in a "dist" arguement. Configure the server accordingly.
             options: {
-                base: '<%= conf.dist %>/<%= conf.web %>', //Set the document root to the dist folder.
+                base: '<%= conf.distWeb %>', //Set the document root to the dist folder.
                 router: '../../var/php/router.php',
                 open: false
             }

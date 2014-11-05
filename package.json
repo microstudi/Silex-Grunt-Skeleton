@@ -1,7 +1,7 @@
 {
   "name": "grunt-silex-skel",
   "private": true,
-  "version": "0.0.1",
+  "version": "1.0",
   "devDependencies": {
     "grunt": "^0.4.5",
     "grunt-autoprefixer": "^1.0.1",

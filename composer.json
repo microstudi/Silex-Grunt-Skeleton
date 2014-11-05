@@ -1,36 +1,42 @@
 {
-    "name": "fabpot/silex-skeleton",
-    "description": "A pre-configured skeleton for the Silex microframework",
+    "name": "microstudi/silex-grunt-skeleton",
+    "description": "A pre-configured skeleton for the Silex microframework with Grunt tasks added",
     "license": "MIT",
     "type": "project",
     "require": {
-        "php": ">=5.3.3",
-        "silex/silex": "~1.0",
+        "php": ">=5.4.0",
+        "silex/silex": "~1.2",
         "silex/web-profiler": "~1.0",
-        "symfony/class-loader": "~2.3",
-        "symfony/config": "~2.3",
-        "symfony/console": "~2.3",
-        "symfony/debug": "~2.3",
-        "symfony/finder": "~2.3",
-        "symfony/form": "~2.3",
-        "symfony/monolog-bridge": "~2.3",
-        "symfony/process": "~2.3",
-        "symfony/security": "~2.3",
-        "symfony/translation": "~2.3",
-        "symfony/twig-bridge": "~2.3",
-        "symfony/validator": "~2.3"
+        "symfony/class-loader": "~2.5",
+        "symfony/config": "~2.5",
+        "symfony/console": "~2.5",
+        "symfony/debug": "~2.5",
+        "symfony/finder": "~2.5",
+        "symfony/form": "~2.5",
+        "symfony/monolog-bridge": "~2.5",
+        "symfony/process": "~2.5",
+        "symfony/security": "~2.5",
+        "symfony/translation": "~2.5",
+        "symfony/twig-bridge": "~2.5",
+        "symfony/validator": "~2.5"
     },
     "autoload": {
         "psr-0": { "": "src/" }
     },
     "extra": {
         "branch-alias": {
-            "dev-master": "1.1.x-dev"
+            "dev-master": "1.0.x-dev"
         }
     },
     "require-dev": {
         "phpunit/phpunit": "*",
-        "symfony/browser-kit": ">=2.3,<2.4-dev",
+        "symfony/browser-kit": "~2.5",
         "symfony/css-selector": "*"
-    }
+    },
+    "authors": [
+        {
+            "name": "Ivan Vergés",
+            "role": "Developer"
+        }
+    ],
 }

@@ -5,6 +5,8 @@ Just another Silex-Framework Skeleton
 
 This is a port from the https://github.com/silexphp/Silex-Skeleton with this features added:
 
+* Built-in PHP server (minimum version required 5.4)
+* Livereloading for any css, js, or php file changes
 * Demo class with view, phpunit test and route
 * Grunt for automating tasks
 * Bower to install javascript packages (currently jQuery, Modernizr)
@@ -100,16 +102,42 @@ grunt phplint
   It performs static code analysis in order to quick detect mistakes or misspellings
 
 * **Code linter**: `grunt lint`
-  Same as default
+  Same as default task
 
 * **Wiredep** `grunt wiredep`
   This task is to add into the specified layouts the bower components
   Should be executed manually every time a bower library is installed
 
+* **build** `grunt build`
+  Builds the project into the dist folder. Production web server should point to 
+  the "dist/web" folder
+
+* **serve** `grunt serve`
+  Starts an instance of the PHP builtin server with livereload pointing to the development
+  folder "web"
+
+* **serve:dist** `grunt serve:dist`
+  Builds the project and starts an instance of the PHP builtin server with
+  livereload pointing to the production folder "web"
+
+* **precommit** `grunt precommit`
+  This task could be usefull if you want to add it to the pre-commit git hook.
+  Executes the lint tasks for a a modified files only so you'll prevent from
+  commiting broken files:
+
+  Content of `.git/hooks/pre-commit`:
+  ```
+  #!/bin/sh
+  grunt precommit
+  ```
+  Remember to make it executable:
+
+  `$ chmod +x .git/hooks/pre-commit`
 
 TODO:
 =====
-- adding clear cache cache in console
-- adding optional yml config for assets path (cdn, jquery cdn), google analytics, etc
-- move bower_components to web dir
+- adding clear cache cache in console via grunt
+- adding optional yml config for assets path (cdn, jquery cdn or cdnfy), google analytics, etc
 - add phpunit to grunt
+- add translations
+- doctrine

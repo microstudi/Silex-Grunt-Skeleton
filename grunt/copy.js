@@ -10,7 +10,7 @@ module.exports = function(grunt) {
                 expand: true,
                 dot: true,
                 cwd: '<%= conf.web %>',
-                dest: '<%= conf.dist %>/<%= conf.web %>',
+                dest: '<%= conf.distWeb %>',
                 src: [
                     'index.php',
                     'images/{,*/}*.webp',

@@ -8,16 +8,6 @@
 // to recursively match all subfolders:
 // 'test/spec/**/*.js'
 //
-CONFIG = {
-    src: 'src',              // PHP source code, routes, classes, etc
-    web: 'web',              // Public web server accessible directory (main controller, assets such as css, etc)
-    views: 'templates',      // Path to html or twig templates
-    dist: 'dist',            // Dist folder
-
-    // Change this to '0.0.0.0' to access the server from outside
-    localURL: 'localhost',
-    localPort:8080
-};
 
 module.exports = function(grunt) {
     // Project configuration.
@@ -25,7 +15,18 @@ module.exports = function(grunt) {
         // Metadata.
         pkg: grunt.file.readJSON('package.json'),
         //config values
-        conf: CONFIG
+        conf: {
+            src: 'src',                   // PHP source code, routes, classes, etc
+            web: 'web',                   // Public web server accessible directory (main controller, assets such as css, etc)
+            views: 'templates',           // Path to html or twig templates
+            distWeb: 'dist/web',          // Dist public folder (where web server points)
+            distViews: 'dist/templates',  // Dist public folder (where web server points)
+            dist: 'dist',                 // Dist build folder
+
+            // Change this to '0.0.0.0' to access the server from outside
+            localURL: 'localhost',
+            localPort:8080
+        }
     });
 
 

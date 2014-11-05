@@ -11,7 +11,7 @@ module.exports = function(grunt) {
                 expand: true,
                 cwd: '<%= conf.views %>',
                 src: '{,*/}*.twig',
-                dest: '<%= conf.dist %>/<%= conf.views %>/'
+                dest: '<%= conf.distViews %>'
             }]
         }
     });

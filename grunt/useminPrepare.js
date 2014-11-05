@@ -21,7 +21,7 @@ module.exports = function(grunt) {
     // additional tasks can operate on them
     grunt.config('useminPrepare', {
         options: {
-            dest: '<%= conf.dist %>/<%= conf.web %>',
+            dest: '<%= conf.dist %>',
             root: '.tmp'
         },
         // html: '<%= conf.views %>/{,*/}*.twig'

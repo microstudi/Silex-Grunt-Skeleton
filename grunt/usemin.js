@@ -13,11 +13,11 @@ module.exports = function(grunt) {
     // Performs rewrites based on rev and the useminPrepare configuration
     grunt.config('usemin', {
         options: {
-            assetsDirs: ['<%= conf.dist %>/<%= conf.web %>']
+            assetsDirs: ['<%= conf.distWeb %>']
         },
-        // html: ['<%= conf.dist %>/<%= conf.views %>/{,*/}*.twig'],
-        html: ['<%= conf.dist %>/<%= conf.views %>/layout.twig'],
-        css: ['<%= conf.dist %>/<%= conf.web %>/styles/{,*/}*.css']
+        // html: ['<%= conf.distViews %>/{,*/}*.twig'],
+        html: ['<%= conf.distViews %>/layout.twig'],
+        css: ['<%= conf.distWeb %>/styles/{,*/}*.css']
     });
 
 };
