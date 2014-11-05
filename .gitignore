@@ -4,8 +4,8 @@
 .tmp
 *.log
 dist
-*.log
-node_modules
-php
-!php/php.ini
+var/php
+!var/php/php.ini
+!var/php/router.php
+!var/php/router_dev.php
 composer.lock

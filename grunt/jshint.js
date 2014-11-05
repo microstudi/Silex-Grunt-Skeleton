@@ -13,8 +13,8 @@ module.exports = function(grunt) {
                 reporter: require('jshint-stylish'),
                 jshintrc: '.jshintrc'
             },
-            app: [
-                '<%= conf.app %>/assets/*.js'            ],
+            dev: [
+                '<%= conf.web %>/scripts/{,*/}*.js'            ],
             gruntfiles: {
                 src: ['Gruntfile.js', 'grunt/{,*/}*.js']
             }

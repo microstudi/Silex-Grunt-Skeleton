@@ -10,31 +10,35 @@ This is a port from the https://github.com/silexphp/Silex-Skeleton with this fea
 * Bower to install javascript packages (currently jQuery, Modernizr)
 
 
-GRUNT
-=====
+GRUNT, BOWER & COMPOSER
+=======================
 
-We use the **grunt** tool in order to execute repetitive task such as:
-* Javascript minification
-* CSS minification
-* Image optimizations
-* Package installers
-* Code checks and tests
-* ... so on ...
+This tools are required to use this project:
 
-## Installing grunt
+* [**Grunt**](http://gruntjs.com/) is a Javascript task runner that helps to execute repetitive tasks such as:
+    * Javascript minification
+    * CSS minification
+    * Image optimizations
+    * Package installers
+    * Code checks and tests
+    * ... so on ...
+
+* [**Bower**](http://bower.io/) is a depencency manager for common Javascript libraries
+
+* [**Composer**](https://getcomposer.org/) is a depencency manager for common PHP libraries
+
+## Installing grunt and bower
 
 Grunt is a scripting task tool installable trougth npm, the Node.js.
-Please refer to the official guide to grunt to install it:
 
-http://gruntjs.com/getting-started
-
-If you want to install grunt on Ubuntu 12.04 o4 14.04 for the very first time just do:
+If you want to install nodejs, grunt and bower on Ubuntu 12.04 or 14.04 for the very first time just do:
 ```
 sudo apt-get install build-essential libssl-dev git
 sudo add-apt-repository ppa:chris-lea/node.js
 sudo apt-get update
 sudo apt-get install nodejs
 sudo npm install -g grunt-cli
+sudo npm install -g bower
 ```
 Additionally, you may remove the configuration npm user directory to avoid
 unexpected permissions problems when using npm as non root user afterwards:
@@ -42,13 +46,44 @@ unexpected permissions problems when using npm as non root user afterwards:
 sudo rm ~/.npm -rf 
 ```
 
+To install Composer on Ubuntu or any other *nix execute this commands:
+```
+curl -sS https://getcomposer.org/installer | php
+sudo mv composer.phar /usr/local/bin/composer
+```
+
+For other OS, please refer to the official install guides:
+
+Install Grunt: http://gruntjs.com/getting-started
+Install Bower: http://bower.io/#install-bower
+Install Composer: https://getcomposer.org/doc/00-intro.md
+
+
 ## Using grunt
 
-Once you have your copy of grunt installed you need to install the tasks used.
-To do so you may just execute in the path where you have your copy of the Goteo code:
+Once you have your copy of Grunt installed you need to install the tasks runners used.
+To do so you may just execute in the path where you have your copy of the Silex-Skeleton code:
 
 ```
 npm install
+```
+
+## Using bower
+
+Once you have your copy of Bower installed you need to download/update the needed javascript libraries.
+To do so you may just execute in the path where you have your copy of the Silex-Skeleton code:
+
+```
+bower install
+```
+
+## Using composer
+
+Once you have your copy of Composer installed you need to download/update the needed PHP libraries.
+To do so you may just execute in the path where you have your copy of the Silex-Skeleton code:
+
+```
+composer install
 ```
 
 After that you're ready to execute any of the task available in the same directory:
@@ -58,7 +93,6 @@ grunt phplint
 ...
 ``` 
 
-
 ## Grunt commands
 
 * **Default task**: `grunt`
@@ -67,3 +101,15 @@ grunt phplint
 
 * **Code linter**: `grunt lint`
   Same as default
+
+* **Wiredep** `grunt wiredep`
+  This task is to add into the specified layouts the bower components
+  Should be executed manually every time a bower library is installed
+
+
+TODO:
+=====
+- adding clear cache cache in console
+- adding optional yml config for assets path (cdn, jquery cdn), google analytics, etc
+- move bower_components to web dir
+- add phpunit to grunt

@@ -7,9 +7,9 @@ module.exports = function(grunt) {
     'use strict';
 
     grunt.config('phplint', {
-        app: [
-           '<%= conf.src %>/**/*.php',
-           '!<%= conf.app %>/**/*.php'
+        dev: [
+           '<%= conf.src %>/{,*/}*.php',
+           '!<%= conf.src %>/{,*/}*.php'
         ]
     });
     grunt.loadNpmTasks('grunt-phplint');

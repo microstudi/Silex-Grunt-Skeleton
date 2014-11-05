@@ -1,0 +1,13 @@
+body {
+    font-family: Arial;
+}
+
+/*
+ Example for grunt-autoprefixer
+ */
+p {
+  transition: transform 1s;
+}
+p:hover{
+  transform: translate(10px);
+}

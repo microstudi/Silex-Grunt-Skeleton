@@ -17,7 +17,7 @@ class DemoController implements ControllerProviderInterface {
         // print_r($controllers);die;
  		$controllers
             ->get('/', array($this, 'index'))
-            ->bind('testpage')
+            ->bind('demopage')
         ;
         return $controllers;
 	}

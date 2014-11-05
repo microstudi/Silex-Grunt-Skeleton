@@ -2,8 +2,8 @@
 
 // configure your app for the phpunit tests environment
 
-// include the prod configuration
-require __DIR__.'/prod.php';
+$app['twig.path'] = array(__DIR__.'/../templates');
+$app['twig.options'] = array('cache' => __DIR__.'/../var/cache/twig');
 
 // enable the debug mode
 // $app['debug'] = true;

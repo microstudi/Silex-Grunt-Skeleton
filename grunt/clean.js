@@ -22,14 +22,15 @@ module.exports = function(grunt) {
         dist: {
             options : {
                 // "no-write": true,
-                // expand:true,
             },
             files: [{
                 dot : true,
                 src: [
                     '.tmp',
                     'php/**/*',
-                    '!php/php.ini'
+                    '!php/php.ini',
+                    '<%= conf.dist %>/*',
+                    '!<%= conf.dist %>/.git*'
                 ]
             }]
         }
