@@ -11,6 +11,11 @@ This is a port from the https://github.com/silexphp/Silex-Skeleton with this fea
 * Grunt for automating tasks
 * Bower to install javascript packages (currently jQuery, Modernizr)
 
+## Installation
+
+```
+composer create-project microstudi/silex-grunt-skeleton new_app_path
+```
 
 GRUNT, BOWER & COMPOSER
 =======================
