@@ -24,7 +24,7 @@ class DemoController implements ControllerProviderInterface {
 
 	public function index(Application $app) {
 
-		return $app['twig']->render('demo.html', array());
+		return $app['twig']->render('demo.twig', array());
 	}
 
 }
