@@ -1,0 +1,5 @@
+<?php
+/**
+ * Functional tests here
+ */
+

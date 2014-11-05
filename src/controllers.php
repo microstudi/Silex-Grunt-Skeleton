@@ -8,6 +8,10 @@ use Symfony\Component\HttpKernel\Exception\NotFoundHttpException;
 
 //Request::setTrustedProxies(array('127.0.0.1'));
 
+
+//Sub routes controller
+$app->mount('/demo', new Demo\Controllers\DemoController());
+
 $app->get('/', function () use ($app) {
     return $app['twig']->render('index.html', array());
 })

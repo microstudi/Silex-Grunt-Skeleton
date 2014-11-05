@@ -1,2 +1,11 @@
+/node_modules/
 /vendor/
+/bower_components/
+.tmp
+*.log
+dist
+*.log
+node_modules
+php
+!php/php.ini
 composer.lock
