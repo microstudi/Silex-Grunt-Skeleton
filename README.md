@@ -25,13 +25,13 @@ This tools are required to use this project:
     * Code checks and tests
     * ... so on ...
 
-* [**Bower**](http://bower.io/) is a depencency manager for common Javascript libraries
+* [**Bower**](http://bower.io/) is a dependency manager for common Javascript libraries
 
-* [**Composer**](https://getcomposer.org/) is a depencency manager for common PHP libraries
+* [**Composer**](https://getcomposer.org/) is a dependency manager for common PHP libraries
 
 ## Installing grunt and bower
 
-Grunt is a scripting task tool installable trougth npm, the Node.js.
+Grunt is a scripting task tool installable through npm, the Node.js.
 
 If you want to install nodejs, grunt and bower on Ubuntu 12.04 or 14.04 for the very first time just do:
 ```
@@ -72,7 +72,7 @@ npm install
 
 ## Using bower
 
-Once you have your copy of Bower installed you need to download/update the needed javascript libraries.
+Once you have your copy of Bower installed you need to download/update the needed Javascript libraries.
 To do so you may just execute in the path where you have your copy of the Silex-Skeleton code:
 
 ```
