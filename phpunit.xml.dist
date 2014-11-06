@@ -15,6 +15,7 @@
 
     <testsuites>
         <testsuite name="Test Suite">
+            <file>src/tests.php</file>
             <directory>src/*/Tests</directory>
         </testsuite>
     </testsuites>
