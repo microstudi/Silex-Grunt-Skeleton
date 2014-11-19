@@ -1,5 +1,5 @@
 //
-// Goteo
+// Silex Grunt Skeleton
 // Gruntfile.js
 //
 // # Folder Paths
