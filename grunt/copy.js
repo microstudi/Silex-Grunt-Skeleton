@@ -55,7 +55,7 @@ module.exports = function(grunt) {
             dot: true,
             cwd: '<%= conf.web %>/images',
             dest: '.tmp/images/',
-            src: '{,*/}*.{gif,jpeg,jpg,png,webp}'
+            src: '{,*/}*.{gif,jpeg,jpg,png,webp,svg}'
         },
         styles: {
             expand: true,
