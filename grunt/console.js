@@ -3,7 +3,7 @@ module.exports = function(grunt) {
 
     'use strict';
 
-    grunt.config('console', {
+    grunt.config('sf2-console', {
         options: {
             path: 'bin/console'
         },
@@ -18,5 +18,5 @@ module.exports = function(grunt) {
         }
     });
 
-    grunt.loadNpmTasks('grunt-symfony2-console');
+    grunt.loadNpmTasks('grunt-symfony2');
 };
