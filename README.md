@@ -141,7 +141,6 @@ grunt phplint
 
 TODO:
 =====
-- adding clear cache cache in console via grunt
 - adding optional yml config for assets path (cdn, jquery cdn or cdnfy), google analytics, etc
 - add phpunit to grunt
 - add translations
