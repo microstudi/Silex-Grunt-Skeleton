@@ -2,7 +2,7 @@
   "name": "grunt-silex-skel",
   "private": true,
   "dependencies": {
-    "jquery": "~2.1.1",
+    "jquery": "~2.2.0",
     "modernizr": "~2.8.3"
   },
   "devDependencies": {}

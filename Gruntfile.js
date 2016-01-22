@@ -68,8 +68,8 @@ module.exports = function(grunt) {
         grunt.task.run([
             'clean:server',
             'concurrent:server',
-            'autoprefixer',
-            'sf2_console:cache-clear-dev',
+            // 'autoprefixer',
+            'sf2_console:cache_clear_dev',
             'php:livereload',
             'watch'
         ]);
@@ -82,9 +82,10 @@ module.exports = function(grunt) {
 
     grunt.registerTask('build', [
         'clean:dist',
+        'sf2_console:cache_clear_prod',
         'concurrent:dist',
         'useminPrepare',
-        'autoprefixer',
+        // 'autoprefixer',
         'concat',
         'cssmin',
         'uglify',
@@ -92,8 +93,7 @@ module.exports = function(grunt) {
         'rev',
         'usemin',
         'modernizr',
-        'processhtml',
-        'sf2_console:cache-clear-prod'
+        'processhtml'
     ]);
 
 };
