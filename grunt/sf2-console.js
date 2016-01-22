@@ -3,7 +3,7 @@ module.exports = function(grunt) {
 
     'use strict';
 
-    grunt.config('sf2-console', {
+    grunt.config('sf2_console', {
         options: {
             path: 'bin/console'
         },

@@ -69,7 +69,7 @@ module.exports = function(grunt) {
             'clean:server',
             'concurrent:server',
             'autoprefixer',
-            'console:cache-clear-dev',
+            'sf2_console:cache-clear-dev',
             'php:livereload',
             'watch'
         ]);
@@ -93,7 +93,7 @@ module.exports = function(grunt) {
         'usemin',
         'modernizr',
         'processhtml',
-        'console:cache-clear-prod'
+        'sf2_console:cache-clear-prod'
     ]);
 
 };
