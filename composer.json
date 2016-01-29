@@ -43,10 +43,6 @@
         "post-create-project-cmd": [
             "npm install",
             "bower install"
-        ],
-        "post-create-project-cmd": [
-            "npm install",
-            "bower update"
         ]
     }
 }
